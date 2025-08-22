@@ -1,0 +1,344 @@
+{
+  "projects": [
+    {
+      "name": "new RSBSL Project",
+      "currentStage": "Research",
+      "labels": {
+        "test": "change 1",
+        "Monday": "Neil meeting, Ben apis list",
+        "Release 8 build documentation": "https://jira.ssnc-corp.cloud/browse/RSDEV-233249"
+      },
+      "platforms": {
+        "Research": {
+          "status": "in-progress",
+          "progress": 75,
+          "lastUpdated": "2025-08-22"
+        },
+        "coding": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "unit_testing": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "MFD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "MFA": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Beta": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Stage": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      },
+      "labelSettings": {
+        "test": {
+          "pinned": false
+        },
+        "Monday": {
+          "pinned": true
+        },
+        "Release 8 build documentation": {
+          "pinned": true
+        }
+      }
+    },
+    {
+      "name": "Payroll Project",
+      "currentStage": "MFD",
+      "labels": {
+        "TWI MFD": "SYST1",
+        "TWUIR": "dev4"
+      },
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-07-25"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-02"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-22"
+        },
+        "MFD": {
+          "status": "in-progress",
+          "progress": 10,
+          "lastUpdated": "2025-08-22"
+        },
+        "MFA": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Beta": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Stage": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      },
+      "labelSettings": {
+        "TWI MFD": {
+          "pinned": true
+        },
+        "TWUIR": {
+          "pinned": true
+        }
+      }
+    },
+    {
+      "name": "Precautionary Email Support",
+      "currentStage": "Beta",
+      "labels": {
+        "MFA": "deployed, verified, done"
+      },
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-05"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-12"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-18"
+        },
+        "MFD": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-20"
+        },
+        "MFA": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-22"
+        },
+        "Beta": {
+          "status": "in-progress",
+          "progress": 10,
+          "lastUpdated": "2025-08-22"
+        },
+        "Stage": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      },
+      "labelSettings": {
+        "MFA": {
+          "pinned": true
+        }
+      }
+    },
+    {
+      "name": "Precautionary DB5 Logging",
+      "currentStage": "Beta",
+      "labels": {
+        "Code changes": "TWI and TWUIR by Ozoda code merged to release branch"
+      },
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-08"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-15"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-19"
+        },
+        "MFD": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-21"
+        },
+        "MFA": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-22"
+        },
+        "Beta": {
+          "status": "in-progress",
+          "progress": 10,
+          "lastUpdated": "2025-08-22"
+        },
+        "Stage": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      },
+      "labelSettings": {
+        "Code changes": {
+          "pinned": true
+        }
+      }
+    },
+    {
+      "name": "3(16) Mpn Project",
+      "currentStage": "Stage",
+      "labels": {
+        "client testing": "ready to turn on, not show interested in testing on beta"
+      },
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-01"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-05"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-10"
+        },
+        "MFD": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-15"
+        },
+        "MFA": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-18"
+        },
+        "Beta": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-22"
+        },
+        "Stage": {
+          "status": "in-progress",
+          "progress": 10,
+          "lastUpdated": "2025-08-22"
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      },
+      "labelSettings": {
+        "client testing": {
+          "pinned": false
+        }
+      }
+    },
+    {
+      "name": "James POST API",
+      "currentStage": "PROD",
+      "labels": {
+        "dale": "test done, verified on postman, setup APIM kong on test, beta pending, prod yet to start"
+      },
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-07-20"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-07-28"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-01"
+        },
+        "MFD": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-05"
+        },
+        "MFA": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-10"
+        },
+        "Beta": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-15"
+        },
+        "Stage": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-22"
+        },
+        "PROD": {
+          "status": "in-progress",
+          "progress": 10,
+          "lastUpdated": "2025-08-22"
+        }
+      },
+      "labelSettings": {
+        "dale": {
+          "pinned": true
+        }
+      }
+    }
+  ],
+  "dateRange": {
+    "startDate": "2025-07-15",
+    "endDate": "2025-09-15"
+  }
+}

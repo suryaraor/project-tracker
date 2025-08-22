@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-project-diagram"></i> Project Tracker - Stage View</h1>
+            <div class="header-info">
+                <div class="filter-controls">
+                    <label class="checkbox-container">
+                        <input type="checkbox" id="showCompletedProjects" checked>
+                        <span class="checkmark"></span>
+                        Show Completed Projects
+                    </label>
+                </div>
+                <button class="refresh-btn" onclick="loadData()">
+                    <i class="fas fa-sync-alt"></i>
+                    Refresh
+                </button>
+                <button class="save-btn" onclick="manualSave()" title="Save changes (Ctrl+S)">
+                    <i class="fas fa-save"></i>
+                    Save
+                </button>
+            </div>
+        </header>
+
+        <div class="tracker-container">
+            <div class="tracker-wrapper">
+                <table class="tracker-table" id="trackerTable">
+                    <thead>
+                        <tr id="headerRow">
+                            <th class="date-column sticky-column">Stage</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- All Project Labels Summary at Bottom -->
+        <div class="main-labels-section">
+            <div class="main-labels-header">
+                <h3><i class="fas fa-tags"></i> All Project Labels</h3>
+            </div>
+            <div class="main-labels-container" id="mainLabelsContainer">
+                <!-- All project labels will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Detail Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalProjectName">Project Details</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="current-stage-info">
+                    <h3>Current Active Stage: <span id="modalCurrentStage"></span></h3>
+                </div>
+                
+                <!-- Labels Section -->
+                <div class="labels-section">
+                    <div class="labels-header">
+                        <h3>Project Labels</h3>
+                        <button class="add-label-btn" onclick="addNewLabel()">
+                            <i class="fas fa-plus"></i> Add Label
+                        </button>
+                    </div>
+                    <div class="labels-container" id="labelsContainer">
+                        <!-- Labels will be populated here -->
+                    </div>
+                </div>
+                
+                <div class="stages-grid" id="modalStagesGrid">
+                    <!-- Stages will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

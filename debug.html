@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tracker - Debug Tools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .debug-panel {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .error { color: #dc3545; }
+        .success { color: #28a745; }
+        .warning { color: #ffc107; }
+        pre {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            overflow: auto;
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔧 Project Tracker Debug Tools</h1>
+    
+    <div class="debug-panel">
+        <h2>Quick Diagnostics</h2>
+        <button onclick="runBasicDiagnostics()">🔍 Run Basic Diagnostics</button>
+        <button onclick="testSaveOperation()">💾 Test Save Operation</button>
+        <button onclick="showDataStructure()">📊 Show Data Structure</button>
+        <button onclick="validateData()">✅ Validate Data</button>
+        <button onclick="repairData()">🔧 Repair Data</button>
+    </div>
+    
+    <div class="debug-panel">
+        <h2>Save Operation Logs</h2>
+        <button onclick="showSaveLogs()">📝 Show Recent Save Logs</button>
+        <button onclick="clearLogs()">🗑️ Clear Logs</button>
+        <div id="logsOutput"></div>
+    </div>
+    
+    <div class="debug-panel">
+        <h2>Live Output</h2>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        let output = document.getElementById('output');
+        let logsOutput = document.getElementById('logsOutput');
+        
+        function log(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const className = type === 'error' ? 'error' : type === 'success' ? 'success' : type === 'warning' ? 'warning' : '';
+            output.innerHTML += `<div class="${className}">[${timestamp}] ${message}</div>`;
+            output.scrollTop = output.scrollHeight;
+            
+            // Also log to console
+            console.log(`[Debug] ${message}`);
+        }
+        
+        function clearOutput() {
+            output.innerHTML = '';
+        }
+        
+        async function runBasicDiagnostics() {
+            clearOutput();
+            log('🔍 Running basic diagnostics...');
+            
+            // Check if main app is loaded
+            if (typeof window.parent !== 'undefined' && window.parent.tracker) {
+                log('✅ Main tracker app is loaded', 'success');
+                const tracker = window.parent.tracker;
+                
+                log(`📊 Projects: ${tracker.data ? tracker.data.projects.length : 'N/A'}`);
+                log(`🎯 Current project: ${tracker.currentProject ? tracker.currentProject.name : 'None'}`);
+                log(`💾 Unsaved changes: ${tracker.unsavedChanges ? 'Yes' : 'No'}`);
+                
+            } else {
+                log('❌ Main tracker app not found', 'error');
+                log('💡 Open this page in the main tracker app for full functionality', 'warning');
+            }
+            
+            // Test server connection
+            try {
+                const response = await fetch('/data.json?t=' + Date.now());
+                if (response.ok) {
+                    log('✅ Server connection working', 'success');
+                    const data = await response.json();
+                    log(`📊 Loaded ${data.projects.length} projects from server`);
+                } else {
+                    log(`❌ Server returned error: ${response.status}`, 'error');
+                }
+            } catch (error) {
+                log(`❌ Server connection failed: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testSaveOperation() {
+            clearOutput();
+            log('💾 Testing save operation...');
+            
+            if (window.parent && window.parent.tracker) {
+                const tracker = window.parent.tracker;
+                
+                try {
+                    const success = await tracker.saveDataWithBackup();
+                    if (success) {
+                        log('✅ Save operation successful', 'success');
+                    } else {
+                        log('❌ Save operation failed', 'error');
+                    }
+                } catch (error) {
+                    log(`💥 Save operation threw error: ${error.message}`, 'error');
+                }
+            } else {
+                log('❌ Tracker not available', 'error');
+            }
+        }
+        
+        function showDataStructure() {
+            clearOutput();
+            log('📊 Current data structure:');
+            
+            if (window.parent && window.parent.tracker && window.parent.tracker.data) {
+                const data = window.parent.tracker.data;
+                output.innerHTML += '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            } else {
+                log('❌ No data available', 'error');
+            }
+        }
+        
+        function validateData() {
+            clearOutput();
+            log('✅ Validating data structure...');
+            
+            if (window.parent && window.parent.validateDataStructure) {
+                window.parent.validateDataStructure();
+                log('✅ Validation complete - check console for details', 'success');
+            } else {
+                log('❌ Validation function not available', 'error');
+            }
+        }
+        
+        function repairData() {
+            clearOutput();
+            log('🔧 Attempting data repair...');
+            
+            if (window.parent && window.parent.forceDataRepair) {
+                window.parent.forceDataRepair();
+                log('🔧 Repair complete - check console for details', 'success');
+            } else {
+                log('❌ Repair function not available', 'error');
+            }
+        }
+        
+        function showSaveLogs() {
+            logsOutput.innerHTML = '';
+            
+            try {
+                const logs = JSON.parse(localStorage.getItem('tracker_save_logs') || '[]');
+                if (logs.length === 0) {
+                    logsOutput.innerHTML = '<p>No save logs found.</p>';
+                } else {
+                    logsOutput.innerHTML = '<pre>' + JSON.stringify(logs, null, 2) + '</pre>';
+                }
+            } catch (error) {
+                logsOutput.innerHTML = `<p class="error">Error loading logs: ${error.message}</p>`;
+            }
+        }
+        
+        function clearLogs() {
+            localStorage.removeItem('tracker_save_logs');
+            logsOutput.innerHTML = '<p>Logs cleared.</p>';
+        }
+        
+        // Auto-run diagnostics on load
+        setTimeout(runBasicDiagnostics, 1000);
+    </script>
+</body>
+</html>
