@@ -1,0 +1,148 @@
+{
+  "projects": [
+    {
+      "name": "Project Echo",
+      "currentStage": "Research",
+      "platforms": {
+        "Research": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "coding": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "unit_testing": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "MFD": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "MFA": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Beta": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Stage": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "PROD": { "status": "not-started", "progress": 0, "lastUpdated": null }
+      }
+    },
+    {
+      "name": "Project Foxtrot",
+      "currentStage": "Research",
+      "platforms": {
+        "Research": { "status": "pending", "progress": 0, "lastUpdated": null },
+        "coding": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "unit_testing": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "MFD": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "MFA": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Beta": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Stage": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "PROD": { "status": "not-started", "progress": 0, "lastUpdated": null }
+      }
+    },
+    {
+      "name": "Project Alpha",
+      "currentStage": "coding",
+      "platforms": {
+        "Research": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-18" },
+        "coding": { "status": "in-progress", "progress": 15, "lastUpdated": "2025-08-22" },
+        "unit_testing": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "MFD": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "MFA": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Beta": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Stage": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "PROD": { "status": "not-started", "progress": 0, "lastUpdated": null }
+      }
+    },
+    {
+      "name": "Project Bravo",
+      "currentStage": "coding",
+      "platforms": {
+        "Research": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-19" },
+        "coding": { "status": "in-progress", "progress": 45, "lastUpdated": "2025-08-21" },
+        "unit_testing": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "MFD": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "MFA": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Beta": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Stage": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "PROD": { "status": "not-started", "progress": 0, "lastUpdated": null }
+      }
+    },
+    {
+      "name": "Project Charlie",
+      "currentStage": "unit_testing",
+      "platforms": {
+        "Research": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-16" },
+        "coding": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-20" },
+        "unit_testing": { "status": "in-progress", "progress": 85, "lastUpdated": "2025-08-22" },
+        "MFD": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "MFA": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Beta": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Stage": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "PROD": { "status": "not-started", "progress": 0, "lastUpdated": null }
+      }
+    },
+    {
+      "name": "Project Delta",
+      "currentStage": "MFD",
+      "platforms": {
+        "Research": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-12" },
+        "coding": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-20" },
+        "unit_testing": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-21" },
+        "MFD": { "status": "in-progress", "progress": 60, "lastUpdated": "2025-08-22" },
+        "MFA": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Beta": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Stage": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "PROD": { "status": "not-started", "progress": 0, "lastUpdated": null }
+      }
+    },
+    {
+      "name": "Project Gamma",
+      "currentStage": "MFA",
+      "platforms": {
+        "Research": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-10" },
+        "coding": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-15" },
+        "unit_testing": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-18" },
+        "MFD": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-20" },
+        "MFA": { "status": "in-progress", "progress": 70, "lastUpdated": "2025-08-22" },
+        "Beta": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "Stage": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "PROD": { "status": "not-started", "progress": 0, "lastUpdated": null }
+      }
+    },
+    {
+      "name": "Project Hotel",
+      "currentStage": "Beta",
+      "platforms": {
+        "Research": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-05" },
+        "coding": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-10" },
+        "unit_testing": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-12" },
+        "MFD": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-16" },
+        "MFA": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-18" },
+        "Beta": { "status": "in-progress", "progress": 40, "lastUpdated": "2025-08-22" },
+        "Stage": { "status": "not-started", "progress": 0, "lastUpdated": null },
+        "PROD": { "status": "not-started", "progress": 0, "lastUpdated": null }
+      }
+    },
+    {
+      "name": "Project India",
+      "currentStage": "Stage",
+      "platforms": {
+        "Research": { "status": "completed", "progress": 100, "lastUpdated": "2025-07-28" },
+        "coding": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-05" },
+        "unit_testing": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-08" },
+        "MFD": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-12" },
+        "MFA": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-15" },
+        "Beta": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-18" },
+        "Stage": { "status": "in-progress", "progress": 25, "lastUpdated": "2025-08-22" },
+        "PROD": { "status": "not-started", "progress": 0, "lastUpdated": null }
+      }
+    },
+    {
+      "name": "Project Juliet",
+      "currentStage": "PROD",
+      "platforms": {
+        "Research": { "status": "completed", "progress": 100, "lastUpdated": "2025-07-20" },
+        "coding": { "status": "completed", "progress": 100, "lastUpdated": "2025-07-28" },
+        "unit_testing": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-01" },
+        "MFD": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-05" },
+        "MFA": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-08" },
+        "Beta": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-12" },
+        "Stage": { "status": "completed", "progress": 100, "lastUpdated": "2025-08-18" },
+        "PROD": { "status": "in-progress", "progress": 60, "lastUpdated": "2025-08-22" }
+      }
+    }
+  ],
+  "dateRange": {
+    "startDate": "2025-08-01",
+    "endDate": "2025-08-31"
+  }
+}

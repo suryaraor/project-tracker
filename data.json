@@ -1,0 +1,313 @@
+{
+  "projects": [
+    {
+      "name": "new RSBSL Project",
+      "currentStage": "MFD",
+      "labels": {
+        "TWUIR": {
+          "value": "dev4",
+          "pinned": false
+        },
+        "ben Kritika": {
+          "value": "Monday meeting, Neil archicture stuff, Ben meeting, Dec to Feb",
+          "pinned": false
+        }
+      },
+      "platforms": {
+        "Research": {
+          "status": "in-progress",
+          "progress": 100,
+          "lastUpdated": "2025-07-25"
+        },
+        "coding": {
+          "status": "not-started",
+          "progress": 100,
+          "lastUpdated": "2025-08-02"
+        },
+        "unit_testing": {
+          "status": "not-started",
+          "progress": 100,
+          "lastUpdated": "2025-08-15"
+        },
+        "MFD": {
+          "status": "pending",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "MFA": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Beta": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Stage": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      }
+    },
+    {
+      "name": "Payroll Project",
+      "currentStage": "MFD",
+      "labels": {
+        "TWI MFD": {
+          "value": "SYST1",
+          "pinned": true
+        },
+        "TWUIR": {
+          "value": "dev4",
+          "pinned": true
+        }
+      },
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-07-25"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-02"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-15"
+        },
+        "MFD": {
+          "status": "pending",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "MFA": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Beta": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Stage": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      }
+    },
+    {
+      "name": "Precautionary Email Support",
+      "currentStage": "MFA",
+      "labels": {},
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-05"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-12"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-18"
+        },
+        "MFD": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-20"
+        },
+        "MFA": {
+          "status": "in-progress",
+          "progress": 50,
+          "lastUpdated": "2025-08-22"
+        },
+        "Beta": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Stage": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      }
+    },
+    {
+      "name": "Precautionary DB5 Logging",
+      "currentStage": "MFA",
+      "labels": {},
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-08"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-15"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-19"
+        },
+        "MFD": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-21"
+        },
+        "MFA": {
+          "status": "in-progress",
+          "progress": 30,
+          "lastUpdated": "2025-08-22"
+        },
+        "Beta": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "Stage": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      }
+    },
+    {
+      "name": "3(16) Mpn Project",
+      "currentStage": "Stage",
+      "labels": {
+        "client testing": {
+          "value": "ready to turn on, not show interested in testing on beta",
+          "pinned": true
+        }
+      },
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-01"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-05"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-10"
+        },
+        "MFD": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-15"
+        },
+        "MFA": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-18"
+        },
+        "Beta": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-20"
+        },
+        "Stage": {
+          "status": "pending",
+          "progress": 0,
+          "lastUpdated": null
+        },
+        "PROD": {
+          "status": "not-started",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      }
+    },
+    {
+      "name": "James POST API",
+      "currentStage": "PROD",
+      "labels": {},
+      "platforms": {
+        "Research": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-07-20"
+        },
+        "coding": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-07-28"
+        },
+        "unit_testing": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-01"
+        },
+        "MFD": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-05"
+        },
+        "MFA": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-10"
+        },
+        "Beta": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-15"
+        },
+        "Stage": {
+          "status": "completed",
+          "progress": 100,
+          "lastUpdated": "2025-08-20"
+        },
+        "PROD": {
+          "status": "pending",
+          "progress": 0,
+          "lastUpdated": null
+        }
+      }
+    }
+  ],
+  "dateRange": {
+    "startDate": "2025-07-15",
+    "endDate": "2025-09-15"
+  }
+}
